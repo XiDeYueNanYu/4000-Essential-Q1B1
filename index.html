@@ -150,7 +150,8 @@
     /* AUDIO CONTROLS (Floating) - RESTORING ORIGINAL LAYOUT/STYLES */
     .floating-controls {
         position: fixed;
-        top: 20px;
+		top: auto;
+        bottom: 20px;
         right: 20px;
         background-color: #f0f0f0;
         padding: 10px;
@@ -167,7 +168,8 @@
     #showControlsButton {
         display: none; /* Ban đầu ẩn */
         position: fixed;
-        top: 20px;
+        top: auto;
+		bottom: 50px;
         right: 20px;
         width: 60px;
         height: 60px;
@@ -414,10 +416,10 @@
         animation: pop .2s;
         /* SỬA LỖI: Đặt margin = 0 để kiểm soát bằng gap của cha (đã đặt gap=0) */
         margin: 0 0px;
-		border: 0px;
-		border-radius: 2px;
-		padding: 3px;
-		min-width: 20px;
+                border: 0px;
+                border-radius: 2px;
+                padding: 3px;
+                min-width: 20px;
     }
     
     @keyframes pop {
@@ -470,14 +472,16 @@
         
         .floating-controls {
             position: fixed;
-            top: 10px;
+            top: auto;
+			bottom: 80px;
             right: 10px;
             width: 50%;
             max-width: none;
         }
         
         #showControlsButton {
-            top: 10px;
+            top: auto;
+			bottom: 100px;
             right: 10px;
             width: 50px;
             height: 50px;
@@ -510,11 +514,11 @@
         }
         .letter-btn-in-answer {
         font-size: 35px; /* Giữ nguyên kích thước chữ */
-		border: 0px;
-		border-radius: 0px;
-		padding: 1px 1px;
-		min-width: 20px;
-		}
+                border: 0px;
+                border-radius: 0px;
+                padding: 1px 1px;
+                min-width: 20px;
+                }
         .control-button {
             width: 40px;
             height: 40px;
